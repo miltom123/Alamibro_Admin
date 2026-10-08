@@ -1,0 +1,158 @@
+{
+  "roles": {
+    "admin": {
+      "label": "Administrador",
+      "initial": "A",
+      "hint": "Todo el panel",
+      "screens": [
+        "inicio",
+        "pedidos",
+        "caja",
+        "carta",
+        "promos",
+        "clientes",
+        "resenas",
+        "reportes",
+        "ajustes"
+      ]
+    },
+    "caja": {
+      "label": "Caja",
+      "initial": "C",
+      "hint": "Pedidos y caja",
+      "screens": [
+        "pedidos",
+        "caja",
+        "clientes"
+      ]
+    },
+    "cocina": {
+      "label": "Cocina",
+      "initial": "K",
+      "hint": "Solo pedidos",
+      "screens": [
+        "pedidos"
+      ]
+    }
+  },
+  "pantallas": {
+    "inicio": {
+      "label": "Inicio",
+      "glyph": "I",
+      "title": "Inicio",
+      "sub": "Cómo va el negocio y qué necesita tu atención"
+    },
+    "pedidos": {
+      "label": "Pedidos",
+      "glyph": "P",
+      "title": "Pedidos en vivo",
+      "sub": "Desde que llega hasta que se entrega"
+    },
+    "caja": {
+      "label": "Caja",
+      "glyph": "C",
+      "title": "Caja",
+      "sub": "Registra pedidos del local, recojo o teléfono"
+    },
+    "carta": {
+      "label": "Carta y stock",
+      "glyph": "M",
+      "title": "Carta y stock",
+      "sub": "Precios, disponibilidad, salsas y agregados"
+    },
+    "promos": {
+      "label": "Promos y cupones",
+      "glyph": "%",
+      "title": "Promos y cupones",
+      "sub": "Planifica la semana y crea cupones"
+    },
+    "clientes": {
+      "label": "Clientes",
+      "glyph": "K",
+      "title": "Clientes",
+      "sub": "Quién te compra y cómo traerlos de vuelta"
+    },
+    "resenas": {
+      "label": "Reseñas",
+      "glyph": "R",
+      "title": "Reseñas y encuestas",
+      "sub": "Lo que dicen tus clientes después del pedido"
+    },
+    "reportes": {
+      "label": "Reportes",
+      "glyph": "G",
+      "title": "Reportes",
+      "sub": "Ventas, productos y oportunidades"
+    },
+    "ajustes": {
+      "label": "Ajustes",
+      "glyph": "A",
+      "title": "Ajustes",
+      "sub": "Tienda, horarios, pagos y equipo"
+    }
+  },
+  "estados_pedido": [
+    "nuevo",
+    "cocina",
+    "listo",
+    "camino",
+    "entregado"
+  ],
+  "columnas_kds": {
+    "nuevo": {
+      "title": "Nuevos",
+      "sub": "Por aceptar",
+      "color": "#2A6FDB"
+    },
+    "cocina": {
+      "title": "En cocina",
+      "sub": "Preparándose",
+      "color": "#D68A00"
+    },
+    "listo": {
+      "title": "Listos",
+      "sub": "Para recoger o enviar",
+      "color": "#7C3AED"
+    },
+    "camino": {
+      "title": "En camino",
+      "sub": "Con el motorizado",
+      "color": "#D11A1E"
+    },
+    "entregado": {
+      "title": "Entregados",
+      "sub": "Hoy",
+      "color": "#1F9D55"
+    }
+  },
+  "agregados_admin": [
+    {
+      "name": "Porción de papas",
+      "price": 5
+    },
+    {
+      "name": "Queso cheddar fundido",
+      "price": 4
+    },
+    {
+      "name": "Pote de salsa extra",
+      "price": 2
+    },
+    {
+      "name": "Doble carne",
+      "price": 7
+    },
+    {
+      "name": "Tocino extra",
+      "price": 3
+    },
+    {
+      "name": "Huevo frito",
+      "price": 2
+    },
+    {
+      "name": "Arroz chaufa (acomp.)",
+      "price": 3
+    }
+  ]
+}

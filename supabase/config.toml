@@ -1,0 +1,19 @@
+# Configuración mínima de Supabase CLI para Ala Mi Bro.
+# Las Edge Functions públicas validan la autorización por su cuenta.
+project_id = "alamibro"
+
+[db]
+major_version = 17
+
+[db.seed]
+enabled = true
+sql_paths = ["./seed.sql"]
+
+[functions.crear-pedido]
+verify_jwt = false
+
+[functions.validar-cupon]
+verify_jwt = false
+
+[functions.encuesta]
+verify_jwt = false

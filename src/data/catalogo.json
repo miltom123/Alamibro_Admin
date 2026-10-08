@@ -1,0 +1,1061 @@
+{
+  "_nota": "PRECIOS DE EJEMPLO. Fuente única del catálogo: la landing y el admin deben leer de aquí.",
+  "categorias": [
+    {
+      "id": "todo",
+      "label": "Todo"
+    },
+    {
+      "id": "alitas",
+      "label": "Alitas"
+    },
+    {
+      "id": "combos",
+      "label": "Combos"
+    },
+    {
+      "id": "platos",
+      "label": "Platos"
+    },
+    {
+      "id": "burgers",
+      "label": "Burgers"
+    },
+    {
+      "id": "bebidas",
+      "label": "Bebidas"
+    },
+    {
+      "id": "complementos",
+      "label": "Complementos"
+    }
+  ],
+  "salsas": [
+    {
+      "id": "bbq",
+      "label": "BBQ Ahumada",
+      "tag": "Top"
+    },
+    {
+      "id": "buffalo",
+      "label": "Buffalo Picante",
+      "tag": "Picante"
+    },
+    {
+      "id": "acevichada",
+      "label": "Acevichada"
+    },
+    {
+      "id": "maracuya",
+      "label": "Maracuyá"
+    },
+    {
+      "id": "honey",
+      "label": "Honey Mustard"
+    },
+    {
+      "id": "rocoto",
+      "label": "Rocoto Tacneño",
+      "tag": "Picante"
+    },
+    {
+      "id": "teriyaki",
+      "label": "Teriyaki"
+    },
+    {
+      "id": "parmesano",
+      "label": "Parmesano Ajo"
+    }
+  ],
+  "complementos_rapidos": [
+    "papasbro",
+    "alitas3",
+    "frozen",
+    "papascheddar",
+    "gaseosa",
+    "salsapote"
+  ],
+  "dias_promo_3x2": [
+    1,
+    4,
+    0
+  ],
+  "productos": [
+    {
+      "id": "clasicas",
+      "cat": "alitas",
+      "name": "Alitas Clásicas",
+      "badge": "3x2 L·J·D",
+      "img": "assets/bbq.webp",
+      "promo": true,
+      "desc": "Crocantes por fuera, jugosas por dentro. Bañadas en la salsa que elijas.",
+      "sizes": [
+        {
+          "id": "6",
+          "label": "6 alitas",
+          "price": 18,
+          "units": 6
+        },
+        {
+          "id": "12",
+          "label": "12 alitas",
+          "price": 32,
+          "units": 12,
+          "tag": "Más pedido"
+        },
+        {
+          "id": "18",
+          "label": "18 alitas",
+          "price": 45,
+          "units": 18,
+          "tag": "Mejor precio"
+        }
+      ],
+      "groups": [
+        {
+          "id": "salsas",
+          "title": "Elige tus salsas",
+          "short": "Salsas",
+          "type": "multi",
+          "required": true,
+          "min": 1,
+          "maxBySize": [
+            1,
+            2,
+            3
+          ],
+          "need": "Elige al menos 1 salsa",
+          "options": [
+            {
+              "id": "bbq",
+              "label": "BBQ Ahumada",
+              "price": 0,
+              "tag": "Top"
+            },
+            {
+              "id": "buffalo",
+              "label": "Buffalo Picante",
+              "price": 0,
+              "tag": "Picante"
+            },
+            {
+              "id": "acevichada",
+              "label": "Acevichada",
+              "price": 0
+            },
+            {
+              "id": "maracuya",
+              "label": "Maracuyá",
+              "price": 0
+            },
+            {
+              "id": "honey",
+              "label": "Honey Mustard",
+              "price": 0
+            },
+            {
+              "id": "rocoto",
+              "label": "Rocoto Tacneño",
+              "price": 0,
+              "tag": "Picante"
+            },
+            {
+              "id": "teriyaki",
+              "label": "Teriyaki",
+              "price": 0
+            },
+            {
+              "id": "parmesano",
+              "label": "Parmesano Ajo",
+              "price": 0
+            }
+          ]
+        },
+        {
+          "id": "acomp",
+          "title": "Elige tu acompañamiento",
+          "short": "Acompañamiento",
+          "type": "single",
+          "required": true,
+          "need": "Elige tu acompañamiento",
+          "zero": "Incluido",
+          "options": [
+            {
+              "id": "papas",
+              "label": "Papas fritas",
+              "price": 0,
+              "tag": "Favorito"
+            },
+            {
+              "id": "camote",
+              "label": "Camote frito",
+              "price": 0
+            },
+            {
+              "id": "chaufa",
+              "label": "Arroz chaufa",
+              "price": 3,
+              "img": "assets/chaufa.webp"
+            },
+            {
+              "id": "ensalada",
+              "label": "Ensalada fresca",
+              "price": 0
+            }
+          ]
+        },
+        {
+          "id": "bebida",
+          "title": "¿Le sumas una bebida?",
+          "short": "Bebidas",
+          "type": "qty",
+          "required": false,
+          "options": [
+            {
+              "id": "gaseosa",
+              "label": "Gaseosa 500 ml",
+              "price": 4
+            },
+            {
+              "id": "chicha",
+              "label": "Chicha morada (vaso)",
+              "price": 5
+            },
+            {
+              "id": "limonada",
+              "label": "Limonada frozen",
+              "price": 6,
+              "img": "assets/limonada.webp",
+              "tag": "Refrescante"
+            },
+            {
+              "id": "gaseosa1l",
+              "label": "Gaseosa 1 L",
+              "price": 8,
+              "tag": "Para compartir"
+            }
+          ]
+        },
+        {
+          "id": "extras",
+          "title": "Hazlo más bro",
+          "short": "Agregados",
+          "type": "qty",
+          "required": false,
+          "options": [
+            {
+              "id": "alitas3",
+              "label": "+3 alitas",
+              "price": 9,
+              "img": "assets/crispy.webp",
+              "tag": "Más pedido"
+            },
+            {
+              "id": "papas",
+              "label": "Porción de papas",
+              "price": 5
+            },
+            {
+              "id": "cheddar",
+              "label": "Queso cheddar fundido",
+              "price": 4
+            },
+            {
+              "id": "salsa",
+              "label": "Pote de salsa extra",
+              "price": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crispy",
+      "cat": "alitas",
+      "name": "Alitas Crispy Bro",
+      "badge": "3x2 L·J·D",
+      "img": "assets/crispy.webp",
+      "promo": true,
+      "desc": "Empanizado extra crunchy con un toque de queso. Para los que aman el crocante.",
+      "sizes": [
+        {
+          "id": "6",
+          "label": "6 alitas",
+          "price": 20,
+          "units": 6
+        },
+        {
+          "id": "12",
+          "label": "12 alitas",
+          "price": 36,
+          "units": 12,
+          "tag": "Más pedido"
+        },
+        {
+          "id": "18",
+          "label": "18 alitas",
+          "price": 50,
+          "units": 18,
+          "tag": "Mejor precio"
+        }
+      ],
+      "groups": [
+        {
+          "id": "salsas",
+          "title": "Elige tus salsas",
+          "short": "Salsas",
+          "type": "multi",
+          "required": true,
+          "min": 1,
+          "maxBySize": [
+            1,
+            2,
+            3
+          ],
+          "need": "Elige al menos 1 salsa",
+          "options": [
+            {
+              "id": "bbq",
+              "label": "BBQ Ahumada",
+              "price": 0,
+              "tag": "Top"
+            },
+            {
+              "id": "buffalo",
+              "label": "Buffalo Picante",
+              "price": 0,
+              "tag": "Picante"
+            },
+            {
+              "id": "acevichada",
+              "label": "Acevichada",
+              "price": 0
+            },
+            {
+              "id": "maracuya",
+              "label": "Maracuyá",
+              "price": 0
+            },
+            {
+              "id": "honey",
+              "label": "Honey Mustard",
+              "price": 0
+            },
+            {
+              "id": "rocoto",
+              "label": "Rocoto Tacneño",
+              "price": 0,
+              "tag": "Picante"
+            },
+            {
+              "id": "teriyaki",
+              "label": "Teriyaki",
+              "price": 0
+            },
+            {
+              "id": "parmesano",
+              "label": "Parmesano Ajo",
+              "price": 0
+            }
+          ]
+        },
+        {
+          "id": "acomp",
+          "title": "Elige tu acompañamiento",
+          "short": "Acompañamiento",
+          "type": "single",
+          "required": true,
+          "need": "Elige tu acompañamiento",
+          "zero": "Incluido",
+          "options": [
+            {
+              "id": "papas",
+              "label": "Papas fritas",
+              "price": 0,
+              "tag": "Favorito"
+            },
+            {
+              "id": "camote",
+              "label": "Camote frito",
+              "price": 0
+            },
+            {
+              "id": "chaufa",
+              "label": "Arroz chaufa",
+              "price": 3,
+              "img": "assets/chaufa.webp"
+            },
+            {
+              "id": "ensalada",
+              "label": "Ensalada fresca",
+              "price": 0
+            }
+          ]
+        },
+        {
+          "id": "bebida",
+          "title": "¿Le sumas una bebida?",
+          "short": "Bebidas",
+          "type": "qty",
+          "required": false,
+          "options": [
+            {
+              "id": "gaseosa",
+              "label": "Gaseosa 500 ml",
+              "price": 4
+            },
+            {
+              "id": "chicha",
+              "label": "Chicha morada (vaso)",
+              "price": 5
+            },
+            {
+              "id": "limonada",
+              "label": "Limonada frozen",
+              "price": 6,
+              "img": "assets/limonada.webp",
+              "tag": "Refrescante"
+            },
+            {
+              "id": "gaseosa1l",
+              "label": "Gaseosa 1 L",
+              "price": 8,
+              "tag": "Para compartir"
+            }
+          ]
+        },
+        {
+          "id": "extras",
+          "title": "Hazlo más bro",
+          "short": "Agregados",
+          "type": "qty",
+          "required": false,
+          "options": [
+            {
+              "id": "alitas3",
+              "label": "+3 alitas",
+              "price": 9,
+              "img": "assets/crispy.webp",
+              "tag": "Más pedido"
+            },
+            {
+              "id": "papas",
+              "label": "Porción de papas",
+              "price": 5
+            },
+            {
+              "id": "cheddar",
+              "label": "Queso cheddar fundido",
+              "price": 4
+            },
+            {
+              "id": "salsa",
+              "label": "Pote de salsa extra",
+              "price": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "combo",
+      "cat": "combos",
+      "name": "Combo Bro",
+      "badge": "Para compartir",
+      "img": "assets/combo.webp",
+      "desc": "Alitas con papas fritas y arroz chaufa. El plato completo, estilo Ala Mi Bro.",
+      "sizes": [
+        {
+          "id": "per",
+          "label": "Personal",
+          "price": 26
+        },
+        {
+          "id": "duo",
+          "label": "Dúo",
+          "price": 48,
+          "tag": "Más pedido"
+        },
+        {
+          "id": "fam",
+          "label": "Familiar",
+          "price": 85
+        }
+      ],
+      "groups": [
+        {
+          "id": "salsas",
+          "title": "Elige tus salsas",
+          "short": "Salsas",
+          "type": "multi",
+          "required": true,
+          "min": 1,
+          "maxBySize": [
+            1,
+            2,
+            3
+          ],
+          "need": "Elige al menos 1 salsa",
+          "options": [
+            {
+              "id": "bbq",
+              "label": "BBQ Ahumada",
+              "price": 0,
+              "tag": "Top"
+            },
+            {
+              "id": "buffalo",
+              "label": "Buffalo Picante",
+              "price": 0,
+              "tag": "Picante"
+            },
+            {
+              "id": "acevichada",
+              "label": "Acevichada",
+              "price": 0
+            },
+            {
+              "id": "maracuya",
+              "label": "Maracuyá",
+              "price": 0
+            },
+            {
+              "id": "honey",
+              "label": "Honey Mustard",
+              "price": 0
+            },
+            {
+              "id": "rocoto",
+              "label": "Rocoto Tacneño",
+              "price": 0,
+              "tag": "Picante"
+            },
+            {
+              "id": "teriyaki",
+              "label": "Teriyaki",
+              "price": 0
+            },
+            {
+              "id": "parmesano",
+              "label": "Parmesano Ajo",
+              "price": 0
+            }
+          ]
+        },
+        {
+          "id": "bebidaCombo",
+          "title": "Bebida del combo",
+          "short": "Bebida",
+          "type": "single",
+          "required": true,
+          "need": "Elige la bebida del combo",
+          "zero": "Incluida",
+          "options": [
+            {
+              "id": "gaseosa",
+              "label": "Gaseosa 500 ml",
+              "price": 0
+            },
+            {
+              "id": "chicha",
+              "label": "Chicha morada",
+              "price": 0
+            },
+            {
+              "id": "limonada",
+              "label": "Limonada",
+              "price": 0,
+              "img": "assets/limonada.webp"
+            },
+            {
+              "id": "jarra",
+              "label": "Sube a jarra 1 L",
+              "price": 8,
+              "tag": "Upgrade"
+            }
+          ]
+        },
+        {
+          "id": "extras",
+          "title": "Hazlo más bro",
+          "short": "Agregados",
+          "type": "qty",
+          "required": false,
+          "options": [
+            {
+              "id": "alitas3",
+              "label": "+3 alitas",
+              "price": 9,
+              "img": "assets/crispy.webp",
+              "tag": "Más pedido"
+            },
+            {
+              "id": "papas",
+              "label": "Porción de papas",
+              "price": 5
+            },
+            {
+              "id": "cheddar",
+              "label": "Queso cheddar fundido",
+              "price": 4
+            },
+            {
+              "id": "salsa",
+              "label": "Pote de salsa extra",
+              "price": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chaufa",
+      "cat": "platos",
+      "name": "Chaufa con Hot Dog",
+      "badge": "",
+      "img": "assets/chaufa.webp",
+      "desc": "Arroz chaufa al wok con hot dog dorado. Un clásico que nunca falla.",
+      "sizes": [
+        {
+          "id": "u",
+          "label": "Plato",
+          "price": 16
+        }
+      ],
+      "groups": [
+        {
+          "id": "extrasPlato",
+          "title": "Agrégale",
+          "short": "Extras",
+          "type": "qty",
+          "required": false,
+          "options": [
+            {
+              "id": "alitas3",
+              "label": "+3 alitas",
+              "price": 9,
+              "img": "assets/crispy.webp",
+              "tag": "Combínalo"
+            },
+            {
+              "id": "huevo",
+              "label": "Huevo frito",
+              "price": 2
+            },
+            {
+              "id": "hotdog",
+              "label": "Hot dog extra",
+              "price": 3
+            },
+            {
+              "id": "papas",
+              "label": "Porción de papas",
+              "price": 5
+            }
+          ]
+        },
+        {
+          "id": "bebida",
+          "title": "¿Le sumas una bebida?",
+          "short": "Bebidas",
+          "type": "qty",
+          "required": false,
+          "options": [
+            {
+              "id": "gaseosa",
+              "label": "Gaseosa 500 ml",
+              "price": 4
+            },
+            {
+              "id": "chicha",
+              "label": "Chicha morada (vaso)",
+              "price": 5
+            },
+            {
+              "id": "limonada",
+              "label": "Limonada frozen",
+              "price": 6,
+              "img": "assets/limonada.webp",
+              "tag": "Refrescante"
+            },
+            {
+              "id": "gaseosa1l",
+              "label": "Gaseosa 1 L",
+              "price": 8,
+              "tag": "Para compartir"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lunes",
+      "cat": "platos",
+      "name": "Chaufa Bro Especial",
+      "badge": "",
+      "img": "assets/lunes.webp",
+      "desc": "Nuestro chaufa servido con hot dog y papas. Ideal para acompañar tus alitas.",
+      "sizes": [
+        {
+          "id": "u",
+          "label": "Plato",
+          "price": 18
+        }
+      ],
+      "groups": [
+        {
+          "id": "extrasPlato",
+          "title": "Agrégale",
+          "short": "Extras",
+          "type": "qty",
+          "required": false,
+          "options": [
+            {
+              "id": "alitas3",
+              "label": "+3 alitas",
+              "price": 9,
+              "img": "assets/crispy.webp",
+              "tag": "Combínalo"
+            },
+            {
+              "id": "huevo",
+              "label": "Huevo frito",
+              "price": 2
+            },
+            {
+              "id": "hotdog",
+              "label": "Hot dog extra",
+              "price": 3
+            },
+            {
+              "id": "papas",
+              "label": "Porción de papas",
+              "price": 5
+            }
+          ]
+        },
+        {
+          "id": "bebida",
+          "title": "¿Le sumas una bebida?",
+          "short": "Bebidas",
+          "type": "qty",
+          "required": false,
+          "options": [
+            {
+              "id": "gaseosa",
+              "label": "Gaseosa 500 ml",
+              "price": 4
+            },
+            {
+              "id": "chicha",
+              "label": "Chicha morada (vaso)",
+              "price": 5
+            },
+            {
+              "id": "limonada",
+              "label": "Limonada frozen",
+              "price": 6,
+              "img": "assets/limonada.webp",
+              "tag": "Refrescante"
+            },
+            {
+              "id": "gaseosa1l",
+              "label": "Gaseosa 1 L",
+              "price": 8,
+              "tag": "Para compartir"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "burger",
+      "cat": "burgers",
+      "name": "Burger Bro",
+      "badge": "Nuevo",
+      "img": "assets/burger.webp",
+      "desc": "Carne a la parrilla, queso cheddar, tocino crocante, lechuga y tomate en pan brioche.",
+      "sizes": [
+        {
+          "id": "u",
+          "label": "Sola",
+          "price": 20
+        },
+        {
+          "id": "c",
+          "label": "Con papas",
+          "price": 25,
+          "tag": "Recomendado"
+        }
+      ],
+      "groups": [
+        {
+          "id": "quitar",
+          "title": "¿Le quitamos algo?",
+          "short": "Sin",
+          "type": "multi",
+          "required": false,
+          "min": 0,
+          "max": 4,
+          "zero": "",
+          "options": [
+            {
+              "id": "cebolla",
+              "label": "Sin cebolla",
+              "price": 0
+            },
+            {
+              "id": "tomate",
+              "label": "Sin tomate",
+              "price": 0
+            },
+            {
+              "id": "lechuga",
+              "label": "Sin lechuga",
+              "price": 0
+            },
+            {
+              "id": "pepinillos",
+              "label": "Sin pepinillos",
+              "price": 0
+            }
+          ]
+        },
+        {
+          "id": "extrasBurger",
+          "title": "Hazla más bro",
+          "short": "Extras",
+          "type": "qty",
+          "required": false,
+          "options": [
+            {
+              "id": "carne",
+              "label": "Doble carne",
+              "price": 7,
+              "tag": "Recomendado"
+            },
+            {
+              "id": "tocino",
+              "label": "Tocino extra",
+              "price": 3
+            },
+            {
+              "id": "huevo",
+              "label": "Huevo frito",
+              "price": 2
+            },
+            {
+              "id": "alitas3",
+              "label": "+3 alitas",
+              "price": 9,
+              "img": "assets/crispy.webp"
+            }
+          ]
+        },
+        {
+          "id": "bebida",
+          "title": "¿Le sumas una bebida?",
+          "short": "Bebidas",
+          "type": "qty",
+          "required": false,
+          "options": [
+            {
+              "id": "gaseosa",
+              "label": "Gaseosa 500 ml",
+              "price": 4
+            },
+            {
+              "id": "chicha",
+              "label": "Chicha morada (vaso)",
+              "price": 5
+            },
+            {
+              "id": "limonada",
+              "label": "Limonada frozen",
+              "price": 6,
+              "img": "assets/limonada.webp",
+              "tag": "Refrescante"
+            },
+            {
+              "id": "gaseosa1l",
+              "label": "Gaseosa 1 L",
+              "price": 8,
+              "tag": "Para compartir"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limonada",
+      "cat": "bebidas",
+      "name": "Bebidas heladas",
+      "badge": "",
+      "img": "assets/limonada.webp",
+      "desc": "Bien heladas para acompañar el picante. Limonada, chicha morada o maracuyá.",
+      "sizes": [
+        {
+          "id": "v",
+          "label": "Vaso",
+          "price": 6
+        },
+        {
+          "id": "j",
+          "label": "Jarra 1 L",
+          "price": 15,
+          "tag": "Para compartir"
+        }
+      ],
+      "groups": [
+        {
+          "id": "sabor",
+          "title": "Elige el sabor",
+          "short": "Sabor",
+          "type": "single",
+          "required": true,
+          "need": "Elige el sabor",
+          "zero": "",
+          "options": [
+            {
+              "id": "limonada",
+              "label": "Limonada",
+              "price": 0,
+              "img": "assets/limonada.webp"
+            },
+            {
+              "id": "chicha",
+              "label": "Chicha morada",
+              "price": 0
+            },
+            {
+              "id": "maracuya",
+              "label": "Maracuyá",
+              "price": 0
+            },
+            {
+              "id": "frozen",
+              "label": "Limonada frozen",
+              "price": 2,
+              "tag": "Top"
+            }
+          ]
+        },
+        {
+          "id": "picar",
+          "title": "¿Algo para picar?",
+          "short": "Para picar",
+          "type": "qty",
+          "required": false,
+          "options": [
+            {
+              "id": "alitas3",
+              "label": "+3 alitas",
+              "price": 9,
+              "img": "assets/crispy.webp",
+              "tag": "Más pedido"
+            },
+            {
+              "id": "papas",
+              "label": "Papas Bro",
+              "price": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "papasbro",
+      "cat": "complementos",
+      "name": "Papas Bro",
+      "icon": "fries",
+      "tile": "#B5121B",
+      "desc": "Papas fritas crocantes con sal de la casa.",
+      "sizes": [
+        {
+          "id": "u",
+          "label": "Porción",
+          "price": 7
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": "papascheddar",
+      "cat": "complementos",
+      "name": "Papas con cheddar",
+      "icon": "fries",
+      "tile": "#9A5A00",
+      "desc": "Papas bañadas en queso cheddar fundido y tocino.",
+      "sizes": [
+        {
+          "id": "u",
+          "label": "Porción",
+          "price": 10
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": "alitas3",
+      "cat": "complementos",
+      "name": "3 alitas extra",
+      "img": "assets/crispy.webp",
+      "desc": "Tres alitas para el antojo, en la salsa de la casa.",
+      "sizes": [
+        {
+          "id": "u",
+          "label": "Porción",
+          "price": 9
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": "gaseosa",
+      "cat": "complementos",
+      "name": "Gaseosa 500 ml",
+      "icon": "drink",
+      "tile": "#7A2E12",
+      "desc": "Bien helada.",
+      "sizes": [
+        {
+          "id": "u",
+          "label": "Botella",
+          "price": 4
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": "frozen",
+      "cat": "complementos",
+      "name": "Limonada frozen",
+      "img": "assets/limonada.webp",
+      "desc": "Refrescante y frapeada.",
+      "sizes": [
+        {
+          "id": "u",
+          "label": "Vaso",
+          "price": 8
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": "salsapote",
+      "cat": "complementos",
+      "name": "Pote de salsa",
+      "icon": "sauce",
+      "tile": "#8E0F10",
+      "desc": "Tu salsa favorita para bañar todo.",
+      "sizes": [
+        {
+          "id": "u",
+          "label": "Pote",
+          "price": 2
+        }
+      ],
+      "groups": []
+    }
+  ]
+}

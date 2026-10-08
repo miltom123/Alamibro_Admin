@@ -1,0 +1,36 @@
+{
+  "nombre": "Ala Mi Bro",
+  "eslogan": "Alitas con identidad tacneña · Sabor con carácter único",
+  "contacto": {
+    "direccion": "Av. San Martín 1115 – Tacna",
+    "whatsapp": "51960394794",
+    "horario": "Todos los días 5:00 PM – 11:30 PM",
+    "instagram": "@alamibro.pe"
+  },
+  "colores": {
+    "fondo_oscuro": "#16100D",
+    "superficie_oscura": "#221915",
+    "superficie_oscura_2": "#2A1E18",
+    "borde_oscuro": "#33261F",
+    "rojo_marca": "#E11D1F",
+    "rojo_sombra_boton": "#8E0F10",
+    "rojo_texto_sobre_claro": "#B5121B",
+    "ambar_marca": "#FFB21A",
+    "crema_texto": "#FFF4E2",
+    "texto_secundario_oscuro": "#D2C2AF",
+    "verde_whatsapp_ok": "#1F9D55",
+    "admin_fondo_claro": "#F6F0E6",
+    "admin_tarjeta": "#FFFFFF",
+    "admin_borde": "#EADFCF",
+    "admin_texto": "#1E1410",
+    "admin_texto_secundario": "#5E4E42"
+  },
+  "graficos_categorias": ["#D11A1E", "#D68A00", "#2A6FDB"],
+  "tipografia": {
+    "titulos": "Lilita One (Google Fonts)",
+    "texto": "Outfit 400–900 (Google Fonts)",
+    "numeros": "Outfit con font-variant-numeric: tabular-nums"
+  },
+  "radios": { "chip": "999px", "boton": "14–16px", "tarjeta": "20–24px", "modal": "28px" },
+  "movimiento": "Entradas fade-up 0.6–0.8s cubic-bezier(.2,.8,.2,1); logo flotando 5–6s; aro punteado girando 22–26s; brillo en botones principales 3s; respetar prefers-reduced-motion"
+}
